@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+/*
 // Define theme colors
 $brand-color:           #D35400;
 $background-color:      #FDF6E3;
@@ -12,13 +12,25 @@ $grey-color-dark:      #996633;
 // Add these typography variables at the top with your other variables
 $heading-color: #2C241D;  // Even darker for headings
 $heading-border-color: rgba(#996633, 0.3);  // Subtle warm border for underlines
+*/
 
+// Define theme colors
+$brand-color:           #4682B4;  // Steel Blue - Softer and calming
+$background-color:      #E3F2FD;  // Light Sky Blue for a fresh look
+$text-color:            #2C3E50;  // Dark Blueish-Gray for readability
+$grey-color:            #78909C;  // Muted Blue-Gray
+$grey-color-light:      #B0BEC5;  // Softer Light Blue-Gray
+$grey-color-dark:       #546E7A;  // Deeper Blue-Gray
 
+// Typography
+$heading-color:         #1E3A5F;  // Darker Navy Blue for contrast
+$heading-border-color:  rgba(#4682B4, 0.3);  // Subtle blue tint for underlines
 
 // Import minima theme
 @import "minima";
 
 // Add Bootstrap CSS
+/*
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
 // Dark mode variables
 :root {
@@ -58,6 +70,50 @@ $heading-border-color: rgba(#996633, 0.3);  // Subtle warm border for underlines
   --button-gradient-hover: linear-gradient(145deg, #3A3530, #312C27);
   --toc-background: linear-gradient(145deg, #332E2A, #2A2622);
 }
+*/
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+
+/* Light mode variables */
+:root {
+  --background-color: #F0F4F8; /* Soft light grayish-blue */
+  --text-color: #2C3E50; /* Dark gray-blue for readability */
+  --brand-color: #5D89A8; /* Muted blue-gray */
+  --grey-color: #A0AAB2; /* Soft neutral gray */
+  --grey-color-light: #D1D9E0; /* Light desaturated blue-gray */
+  --grey-color-dark: #6E7C87; /* Muted cool gray */
+  --heading-color: #374956; /* Darker gray-blue for contrast */
+  --code-background: #E8EEF3; /* Very soft cool gray */
+  --blockquote-background: #E3EAF1; /* Subtle, light background */
+  --card-background: #DFE6EC; /* Soft, slightly blue-tinted */
+  --border-color: rgba(150, 170, 190, 0.5); /* Subtle, cool-toned border */
+  --scroll-thumb: rgba(120, 140, 160, 0.75); /* Muted grayish-blue scrollbar */
+  --scroll-thumb-hover: rgba(140, 160, 180, 0.75); /* Slightly lighter on hover */
+  --button-gradient: linear-gradient(145deg, #F8FAFC, #E3EAF1); /* Soft blueish-gray */
+  --button-gradient-hover: linear-gradient(145deg, #F0F4F8, #D1D9E0);
+  --toc-background: linear-gradient(145deg, #F8FAFC, #E3EAF1);
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --background-color: #242C35; /* Darker, neutral gray-blue */
+  --text-color: #DDE6EE; /* Soft white-blue */
+  --brand-color: #7999B4; /* Muted blue */
+  --grey-color: #5A6B7A; /* Cool dark gray */
+  --grey-color-light: #4A5A69; /* Slightly darker */
+  --grey-color-dark: #2E3A47; /* Deep navy-gray */
+  --heading-color: #BCC7D1; /* Light grayish-blue */
+  --code-background: #2C3B47; /* Dark blue-gray */
+  --blockquote-background: #2A3844; /* Soft contrast */
+  --card-background: #26333F; /* Dark navy-gray */
+  --border-color: rgba(121, 153, 180, 0.5); /* Soft, subtle */
+  --scroll-thumb: rgba(90, 110, 130, 0.75); /* Darker gray-blue */
+  --scroll-thumb-hover: rgba(110, 130, 150, 0.75);
+  --button-gradient: linear-gradient(145deg, #242C35, #2A3844);
+  --button-gradient-hover: linear-gradient(145deg, #2C3B47, #374956);
+  --toc-background: linear-gradient(145deg, #242C35, #2A3844);
+}
+
 
 // Base layout and whitespace fix
 html, body {

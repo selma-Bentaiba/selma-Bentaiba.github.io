@@ -2,24 +2,33 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container" style="max-width: 1200px; margin: 0 auto;">
   <div class="row">
     <div class="col-md-12">
       <!-- About Me Section -->
       <section class="about-section">
-        <div class="about-content">
-          <h1>Hi, I'm Pramod</h1>
-          <p>I like to make art. Currently working <a href="https://twitter.com/joindimension" target="_blank">@joindimension</a> on LLM Orchestration.</p>
-          <p>In my free time I like to make educational content and dive more into the amazing mathematical world of AI.</p>
-          <p>You can find my tech articles in the blog section and my way of life in thoughts.</p>
+ <!--       <div class="portrait-container" style="text-align: center;">
+           <img src="/assets/images/img.webp" alt="Selma" class="portrait-image" style="max-width: 100%; height: auto;">
+           -->
+        <div class="image-container" style="text-align: center; margin-top: 0;">
+          <img src="/assets/images/img.webp" alt="Selma" class="image" style="max-width: 60%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0.005px;">
         </div>
-        <div class="portrait-container">
-          <img src="/assets/images/img.webp" alt="Pramod" class="portrait-image">
-          <div class="wave-hand">👋🏼</div>
+        </div>
+
+        <div style="text-align: center; font-style: italic; margin-top: 1px; color: #888; font-weight: 100; border-top: 1px solid #ddd; padding-top: 5px;">
+            <p>"من خلال الشيفرة والكلمات، ألاحق أحلامي،</p>
+
+        </div>
+</div>
+
+        <div class="about-content">
+          <h5>Hey, I'm Selma</h5>
+          <p>I've been writing since I could hold a pen okay, maybe not *that* early, but you get the idea. I mix my love for words with my obsession with tech, and now I’m knee-deep in AI and machine learning. You’ll usually find me diving into computer vision (yes, I’m doing my Master’s in it right now, first year—*no pressure, right?*).</p>
+          <p>In between trying to figure out why my code doesn't work (again), I’m writing about everything from AI projects to tech life, with a healthy dose of sarcasm to keep things interesting. I might even throw in a few reflections on life, tech, and whatever else is bugging me at the moment.</p>
+          <p>On this blog, I’m sharing my journey my successes, my failures, and all the weird in-betweens that come with learning and building cool stuff. So buckle up, because it’s a mix of technical deep dives and, yes, maybe a little bit of my sarcastic humor thrown in for good measure. Enjoy the ride!</p>
         </div>
       </section>
 
-      <!-- Latest Blog Post Section -->
       <!-- Latest Blog Post Section -->
       {% if site.blogs.size > 0 %}
       <section>
@@ -38,7 +47,7 @@ layout: default
             </div>
             <div class="meta-right">
               <span class="reading-time">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"> 
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>

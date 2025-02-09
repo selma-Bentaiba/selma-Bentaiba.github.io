@@ -18,17 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Pramod's Blog
-email: goyalpramod1729@gmail.com
+title: Selma's Blog
+email: bentaibaselma@gmail.com
 description: >-
-  A space for Machine Learning, Philosophy, Life, Food or whatever I fancy at the moment.
+ . زاويتي الخاصة للذكاء الاصطناعي، الأفكار، وكل شيء يشعل شغفي 
 baseurl: ""
-url: "https://goyalpramod.github.io"
-twitter_username: goyal__pramod
-github_username:  goyalpramod
-linkedin_username: goyalpramod
-youtube_username: goyal_pramod
-logo: "/assets/images/img.webp"  # Path to your image
+url: "https://selma-Bentaiba.github.io"
+github_username:  selma-Bentaiba
+linkedin_username: selma-bentaiba
+logo: "/assets/images/Palestine_logo.jpg"  
 
 # Build settings
 theme: minima

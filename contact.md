@@ -27,21 +27,6 @@ permalink: /contact/
     </a>
   </div>
 
-  <!-- X Card -->
-  <div class="contact-card">
-    <div class="contact-icon">
-      <i class="fa-brands fa-x-twitter"></i>
-    </div>
-    <h2 class="contact-method">X</h2>
-    <p class="contact-description">Drop a "Hi" in <s>twitter</s> X.</p>
-    <a href="https://twitter.com/{{ site.twitter_username }}" class="contact-link" target="_blank" rel="noopener noreferrer">
-      @{{ site.twitter_username }}
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-        <line x1="5" y1="12" x2="19" y2="12"></line>
-        <polyline points="12 5 19 12 12 19"></polyline>
-      </svg>
-    </a>
-  </div>
 
   <!-- LinkedIn Card -->
   <div class="contact-card">
@@ -59,20 +44,6 @@ permalink: /contact/
     </a>
   </div>
 
-  <!-- YouTube Card -->
-  <div class="contact-card">
-    <div class="contact-icon">
-      <i class="fa-brands fa-youtube"></i>
-    </div>
-    <h2 class="contact-method">YouTube</h2>
-    <p class="contact-description">Consider watching my videos, they make math seem fun (at least that's what I try to do).</p>
-    <a href="https://youtube.com/@{{ site.youtube_username }}" class="contact-link" target="_blank" rel="noopener noreferrer">
-      @{{ site.youtube_username }}
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
-        <line x1="5" y1="12" x2="19" y2="12"></line>
-        <polyline points="12 5 19 12 12 19"></polyline>
-      </svg>
-    </a>
-  </div>
+
 </div>
 </div>
