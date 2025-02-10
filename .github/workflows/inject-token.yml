@@ -1,9 +1,11 @@
 name: Inject Token
-
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -18,11 +20,24 @@ jobs:
         
       - name: Inject token
         run: |
-          sed -i "s/github_pat_YOUR_TOKEN/${{ secrets.METRICS_TOKEN }}/g" _layouts/blog.html
+          if [ -f _layouts/blog.html ]; then
+            sed -i "s/github_pat_YOUR_TOKEN/${{ secrets.METRICS_TOKEN }}/g" _layouts/blog.html
+          else
+            echo "File not found: _layouts/blog.html"
+            exit 1
+          fi
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.METRICS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Changed from personal_token
           publish_dir: ./_site
           force_orphan: true
+
+      - name: Handle Errors
+        if: failure()
+        run: |
+          echo "Workflow failed. Check:"
+          echo "1. METRICS_TOKEN secret exists"
+          echo "2. _layouts/blog.html exists"
+          echo "3. Permissions are correct"
