@@ -26,7 +26,8 @@ baseurl: ""
 url: "https://selma-Bentaiba.github.io"
 github_username:  selma-Bentaiba
 linkedin_username: selma-bentaiba
-logo: "/assets/images/Palestine_logo.jpg"  
+#logo: "/assets/images/Palestine_logo.jpg"  
+logo: "{{ site.baseurl }}/assets/images/Palestine_logo.jpg"
 
 # Build settings
 theme: minima
