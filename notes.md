@@ -1,64 +1,38 @@
 ---
-layout: default
+layout: page
+title: Notes
+permalink: notes/
 ---
-{% if page.image %}
-<div class="featured-image-container">
-  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="featured-image">
-</div>
-{% endif %}
 
-<article class="note">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">Last updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}</p>
+# Notes
+This is where I write down my weekly learnings, goals, plans etc.
 
-  {{ content }}
-
-  <!-- Social sharing section -->
-  <div class="share-section mt-4">
-    <h5 class="share-title">Share this post with your friends!!</h5>
-    <div class="share-buttons">
-      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" 
-         class="share-btn" 
-         target="_blank"
-         rel="noopener noreferrer">
-        <i class="fab fa-twitter"></i> Twitter
-      </a>
-      
-      <a href="https://reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title | url_encode }}" 
-         class="share-btn" 
-         target="_blank"
-         rel="noopener noreferrer">
-        <i class="fab fa-reddit"></i> Reddit
-      </a>
-      
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" 
-         class="share-btn" 
-         target="_blank"
-         rel="noopener noreferrer">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" 
-         class="share-btn" 
-         target="_blank"
-         rel="noopener noreferrer">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
-    </div>
-  </div>
-
-  <!-- Comments section -->
-  {% if page.comments != false %}
-  <div class="comments-section mt-5">
-    <h5 class="comments-title mb-4">Comments</h5>
-    <script src="https://utteranc.es/client.js"
-            repo="https://github.com/selma-Bentaiba/selma-Bentaiba.github.io.git"
-            issue-term="pathname"
-            label="💬 comments"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-    </script>
-  </div>
+{% for note in site.notes %}
+<details class="note-item">
+  <summary>{{ note.title | escape }}</summary>
+  <p class="note-date">Last updated: {{ note.last_modified_at | date: "%B %-d, %Y" }}</p>
+  {% if site.show_excerpts %} 
+    {{ note.excerpt }} 
+  {% else %}
+    {{ note.content }}
   {% endif %}
-</article>
+</details>
+{% endfor %}
+
+<style>
+  .note-item {
+    margin-bottom: 1rem;
+  }
+  .note-date {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 0;
+  }
+  details summary:hover {
+    color: #0366d6;
+  }
+</style>
