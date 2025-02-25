@@ -1,1 +1,9 @@
+---
+layout: note
+title: "Tue 25-02-2025"
+last_modified_at: 
+categories: [lifestyle, self-help, growth]
+image: 
+---
+
 random ideas !
