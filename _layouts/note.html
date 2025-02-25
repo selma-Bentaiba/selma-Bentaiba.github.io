@@ -1,87 +1,64 @@
-<!-- notes.md for your Jekyll blog with toggle functionality -->
-
 ---
-layout: page
-title: Notes
-permalink: /notes/
+layout: default
 ---
-
-<h1>Notes</h1>
-<p>This is where I write down my weekly learnings, goals, plans etc.</p>
-
-<style>
-  .toggle-note {
-    margin-bottom: 1rem;
-  }
-  
-  .toggle-title {
-    cursor: pointer;
-    padding: 0.5rem;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .toggle-title:hover {
-    background-color: #e5e5e5;
-  }
-  
-  .toggle-content {
-    padding: 0.5rem;
-    display: none;
-    border-left: 2px solid #ccc;
-    margin-left: 0.5rem;
-    padding-left: 1rem;
-  }
-  
-  .toggle-indicator {
-    font-weight: bold;
-    transition: transform 0.3s ease;
-  }
-  
-  .toggle-title.active .toggle-indicator {
-    transform: rotate(90deg);
-  }
-  
-  .toggle-meta {
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 0.5rem;
-  }
-</style>
-
-<div class="notes-container">
-  {% for note in site.notes %}
-    <div class="toggle-note">
-      <div class="toggle-title" onclick="toggleNote(this)">
-        <span>{{ note.title | escape }}</span>
-        <span class="toggle-indicator">›</span>
-      </div>
-      <div class="toggle-content">
-        <div class="toggle-meta">Last updated: {{ note.last_modified_at | date: "%B %-d, %Y" }}</div>
-        {% if site.show_excerpts %} 
-          {{ note.excerpt }} 
-        {% else %}
-          {{ note.content }}
-        {% endif %}
-      </div>
-    </div>
-  {% endfor %}
+{% if page.image %}
+<div class="featured-image-container">
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="featured-image">
 </div>
+{% endif %}
 
-<script>
-  function toggleNote(element) {
-    // Toggle active class on the title
-    element.classList.toggle('active');
-    
-    // Get the content element and toggle display
-    const content = element.nextElementSibling;
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-    } else {
-      content.style.display = 'block';
-    }
-  }
-</script>
+<article class="note">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">Last updated: {{ page.last_modified_at | date: "%B %-d, %Y" }}</p>
+
+  {{ content }}
+
+  <!-- Social sharing section -->
+  <div class="share-section mt-4">
+    <h5 class="share-title">Share this post with your friends!!</h5>
+    <div class="share-buttons">
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      
+      <a href="https://reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title | url_encode }}" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-reddit"></i> Reddit
+      </a>
+      
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
+  </div>
+
+  <!-- Comments section -->
+  {% if page.comments != false %}
+  <div class="comments-section mt-5">
+    <h5 class="comments-title mb-4">Comments</h5>
+    <script src="https://utteranc.es/client.js"
+            repo="https://github.com/selma-Bentaiba/selma-Bentaiba.github.io.git"
+            issue-term="pathname"
+            label="💬 comments"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+  {% endif %}
+</article>
