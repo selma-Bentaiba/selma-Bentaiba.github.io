@@ -10,6 +10,12 @@ This is where I write down my random daily thoughts, my weekly learnings, goals,
 <details class="note-item">
   <summary>{{ note.title | escape }}</summary>
   <p class="note-date">Last updated: {{ note.last_modified_at | date: "%B %-d, %Y" }}</p>
+
+    <!-- Display the image if it exists -->
+  {% if note.image %}
+    <img src="{{ note.image | relative_url }}" alt="{{ note.title | escape }}" class="note-image">
+  {% endif %}
+
   {{ note.content }} <!-- Always show full content -->
 </details>
 {% endfor %}
