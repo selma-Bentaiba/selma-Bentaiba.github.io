@@ -3,7 +3,8 @@ layout: note
 title: "Starting the weekly review"
 last_modified_at: 16-03-2025 02.23
 categories: [Learning Journey, Productivity, Lifestyle , Journaling]
-image: ../../assets/images/week1.jpeg
+image: ../../assets/images/week1-2.jpeg
+
 ---
 
 ## First week review 
@@ -68,6 +69,7 @@ I tried to tackle neural networks and get a deeper understanding of them.
 Last year, I started learning about ML, DL, and LLMs for my Bachelor’s final project,
 but I realized there were many gaps in my knowledge.
 This became clear during a college module called *"Machine Learning and Neural Networks."*
+![Neural Networks](../../assets/images/week1.3.jpeg)
 
 I read a few articles on backpropagation and NNs:
 - [Neural Networks Intuitively and Exhaustively](https://iaee.substack.com/p/neural-networks-intuitively-and-exhaustively)
