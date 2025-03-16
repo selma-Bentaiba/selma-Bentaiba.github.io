@@ -3,7 +3,7 @@ layout: note
 title: "Starting the weekly review"
 last_modified_at: 16-03-2025 02.23
 categories: [Learning Journey, Productivity, Lifestyle , Journaling]
-image: ../../assets/images/week1.2.jpeg
+image: ../../assets/images/week1.1.jpeg
 
 ---
 
