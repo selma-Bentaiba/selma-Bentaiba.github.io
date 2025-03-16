@@ -2,6 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   <!-- Add this block before head.html include -->
+
 <script>
   (function() {
     // Immediately set the theme before any content loads
@@ -38,6 +39,7 @@
 </style>
 
   {%- include head.html -%}
+  
   <!-- Add favicon right after head.html include -->
   <link rel="icon" type="image/png" href="{{ '/assets/images/Palestine_logo.jpg' | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/Palestine_logo.jpg' | relative_url }}">
@@ -67,6 +69,7 @@
   <body class="preload">
 
     {%- include header.html -%}
+  {% include google-analytics.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
