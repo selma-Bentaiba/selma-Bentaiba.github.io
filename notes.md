@@ -10,13 +10,10 @@ This is where I write down my random daily thoughts, my weekly learnings, goals,
 <details class="note-item">
   <summary>{{ note.title | escape }}</summary>
   <p class="note-date">Last updated: {{ note.last_modified_at | date: "%B %-d, %Y" }}</p>
-  {% if site.show_excerpts %} 
-    {{ note.excerpt }} 
-  {% else %}
-    {{ note.content }}
-  {% endif %}
+  {{ note.content }} <!-- Always show full content -->
 </details>
 {% endfor %}
+
 
 <style>
   .note-item {
