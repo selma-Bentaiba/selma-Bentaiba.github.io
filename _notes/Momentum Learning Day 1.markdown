@@ -21,7 +21,7 @@ And lastly, what I studied today: prediction, prompts, and safety. It was about 
 The short course was informative, but I could've studied it in a shorter time, like in one session.
 
 
-Then, I studied from the book [*Deep Learning for Computer Vision Systems*](https://www.manning.com/books/deep-learning-for-computer-vision-systems), which I also started this summer, because I felt studying computer vision needs a stronger theoretical side, so this was a good resource for me.
+Then, I studied from the book [*Deep Learning for Computer Vision Systems*](https://www.manning.com/books/deep-learning-for-vision-systems), which I also started this summer, because I felt studying computer vision needs a stronger theoretical side, so this was a good resource for me.
 I started chapter 3 on CNNs, and how image classification using MLPs has its drawbacks by doing an image classification with the MNIST dataset using a very simple neural network.
 The key lesson was how NNs need the input image to be flattened from a 2D matrix into a 1D vector, and by this process we lose spatial features, which makes the training on finding patterns of close areas in the image harder and take longer. Whereas in CNNs there are convolutional layers, where each neuron is connected only to a small local region of the image instead of all pixels as in MLPs.
 
