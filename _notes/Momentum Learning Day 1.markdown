@@ -1,5 +1,4 @@
-
- ---
+---
 layout: note
 title: "Starting the learning challenge! "
 last_modified_at: 17-09-2025 23.23
