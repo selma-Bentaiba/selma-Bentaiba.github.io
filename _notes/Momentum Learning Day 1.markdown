@@ -7,7 +7,7 @@ image: ../../assets/images/start.jpeg
 
 ---
 
- # Momentum Learning Series| Day 1
+ # Day 1| Momentum Learning Series
 
 This blog marks the start of a personal challenge: a series where I commit to learning every single day and documenting it here. My focus is on computer science, AI, and computer vision. The rule is simple: at least one hour of learning a day, and one honest reflection written down. You can join me in this challenge too — build consistency, learn something daily, and record it.
 
