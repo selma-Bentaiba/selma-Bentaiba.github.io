@@ -5,7 +5,7 @@ last_modified_at: 18-09-2025 23.55
 categories: [Momentum_Learning,Learning Journey]
 
 ---
- # Momentum Learning Series| Day 2
+ # Day 2| Momentum Learning Series 
 
 
 To strengthen and deepen my knowledge of agents, I started a new course called [LLMs as Operating Systems: Agent Memory](https://learn.deeplearning.ai/courses/llms-as-operating-systems-agent-memory).
