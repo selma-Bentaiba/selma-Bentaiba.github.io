@@ -5,7 +5,7 @@ last_modified_at: 21-09-2025
 categories: [Momentum_Learning,Learning Journey]
 
 ---
- # Day 5| Momentum Learning Series# Day 6 – Consistent Learning
+ # Day 5| Momentum Learning Series
 
 Today I wrapped up the **LLMs as Operating Systems** course. It feels like a milestone because now I see the bigger picture of how LLMs can actually work as the “core” of applications, not just a chatbot.
 
