@@ -42,10 +42,10 @@ I built two agents:
 
 They passed messages back and forth, and with shared memory, both had the same view of what was going on.
 
-Finally, I tried the **multi-agent abstraction**: put both agents into a single group chat. That was simpler, but the idea is the same—agents can coordinate either by tools or by a shared space.
+Finally, I tried the **multi-agent abstraction**: put both agents into a single group chat. That was simpler, but the idea is the same agents can coordinate either by tools or by a shared space.
 
-For me, this part really shows how we can move beyond a single “all-knowing” agent. 
-We can design **specialized agents** that cooperate—almost like microservices, but in natural language.
+For me, this part really shows how we can move beyond a single “all knowing” agent. 
+We can design **specialized agents** that cooperate almost like microservices, but in natural language.
 
 ---
 
