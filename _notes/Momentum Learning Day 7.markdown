@@ -25,9 +25,9 @@ For me, that transparency was the big shift. It felt less like guessing and more
 I assembled a demo agent "Alfred" (the butler) using **smolagents**.  
 
 - **Custom tools I wrote:**
-  - `suggest_menu()` → suggest menus depending on the occasion.  
-  - `catering_service_tool()` → simulate picking the best catering service in Gotham.  
-  - `SuperheroPartyThemeTool` → generate themed ideas .  
+  - `suggest_menu()`: suggest menus depending on the occasion.  
+  - `catering_service_tool()`: simulate picking the best catering service in Gotham.  
+  - `SuperheroPartyThemeTool`: generate themed ideas .  
 
 - **Prebuilt tools I plugged in:**
   - `DuckDuckGoSearchTool` (search),  
