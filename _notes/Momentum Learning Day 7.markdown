@@ -19,10 +19,9 @@ In practice, this means you don’t just get a black-box answer. You see:
 
 For me, that transparency was the big shift. It felt less like guessing and more like debugging with a colleague.
 
----
 
-## Building Alfred (with smolagents)
-I assembled a demo agent "Alfred" (the butler) using **smolagents**.  
+## What I Built: Alfred the Party Planner 🦇  
+I followed the tutorial and built a playful **butler agent (Alfred)** that plans a party at Wayne’s mansion.  
 
 - **Custom tools I wrote:**
   - `suggest_menu()`: suggest menus depending on the occasion.  
@@ -40,7 +39,6 @@ With these wired into a `CodeAgent`, I could ask:
 Alfred went step by step: picked the theme, searched, browsed links, and finally returned a curated playlist.  
 Watching each tool call and execution log made the whole process feel robust and traceable.
 
----
 
 ## Reflections as an Engineer
 - **smolagents is pragmatic**: the `MultiStepAgent` + execution log design is exactly what makes debugging feasible.  
@@ -48,7 +46,6 @@ Watching each tool call and execution log made the whole process feel robust and
 - **Observability is real**: I like that smolagents integrates with OpenTelemetry + Langfuse. Being able to replay a run or see why it failed is non-negotiable in production.  
 - **Feels future-proof**: this setup makes agents composable, testable, and closer to real software systems rather than “magic prompts.”  
 
----
 
 ## Next Step
 The party planner was fun, but the same pattern applies to serious workflows.  
