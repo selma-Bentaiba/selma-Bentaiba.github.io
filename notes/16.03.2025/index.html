@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Add this block before head.html include -->
+
+<script>
+  (function() {
+    // Immediately set the theme before any content loads
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    // Prevent Flash Of Incorrect Theme (FOIT)
+    document.documentElement.style.visibility = 'hidden';
+    
+    window.addEventListener('DOMContentLoaded', function() {
+      document.documentElement.style.visibility = '';
+    });
+  })();
+</script>
+
+<style>
+  /* Critical CSS to prevent layout shift */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    max-width: 710px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    left: 0;
+  }
+  
+</style><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Starting the weekly review | Selma’s Blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Starting the weekly review" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="First week review" />
+<meta property="og:description" content="First week review" />
+<link rel="canonical" href="https://selma-bentaiba.github.io/notes/16.03.2025/" />
+<meta property="og:url" content="https://selma-bentaiba.github.io/notes/16.03.2025/" />
+<meta property="og:site_name" content="Selma’s Blog" />
+<meta property="og:image" content="https://selma-bentaiba.github.io/assets/images/week1.1.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-09-30T00:43:48+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://selma-bentaiba.github.io/assets/images/week1.1.jpeg" />
+<meta property="twitter:title" content="Starting the weekly review" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-16T00:00:00+00:00","datePublished":"2025-09-30T00:43:48+00:00","description":"First week review","headline":"Starting the weekly review","image":"https://selma-bentaiba.github.io/assets/images/week1.1.jpeg","mainEntityOfPage":{"@type":"WebPage","@id":"https://selma-bentaiba.github.io/notes/16.03.2025/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://selma-bentaiba.github.io/%7B%7B%20site.baseurl%20%7D%7D/assets/images/Palestine_logo.jpg"}},"url":"https://selma-bentaiba.github.io/notes/16.03.2025/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://selma-bentaiba.github.io/feed.xml" title="Selma&apos;s Blog" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Z57NPQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J76Z57NPQD');
+</script>
+</head>
+<!-- Add favicon right after head.html include -->
+  <link rel="icon" type="image/png" href="/assets/images/Palestine_logo.jpg">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/Palestine_logo.jpg">
+  <link rel="apple-touch-icon" href="/assets/images/Palestine_logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    body {
+      /* font-family: "Karla", serif; */
+      font-family: "Lora", serif;
+      /* font-family: "STIX Two Text", serif; */
+      /* font-family: "Bentham", serif; */
+      /* font-family: 'Nunito', sans-serif; */
+      font-optical-sizing: auto;
+      font-size: large;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <body class="preload"><header class="site-header">
+  <!-- Add Google Analytics only in production --><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Z57NPQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J76Z57NPQD');
+</script>
+<!-- Add X-Frame-Options meta tag -->
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Selma's Blog</a>
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon" aria-label="Menu">
+          <svg viewBox="0 0 18 15" width="18px" height="15px" aria-hidden="true">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link" href="/blog/">Blog</a>
+        <a class="page-link" href="/thoughts/">Thoughts</a>
+        <a class="page-link" href="/notes/">Notes</a>
+
+        <a class="page-link" href="/contact/">Contact Me</a>
+      </div>
+    </nav>
+  </div>
+
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+</header><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Z57NPQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J76Z57NPQD');
+</script>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+<div class="featured-image-container">
+  <img src="/assets/images/week1.1.jpeg" alt="Starting the weekly review" class="featured-image">
+</div>
+
+
+<article class="note">
+  <h1>Starting the weekly review</h1>
+  <p class="meta">Last updated: March 16, 2025</p>
+
+  <h2 id="first-week-review">First week review</h2>
+
+<p>It’s been three weeks since I started this blog.
+I was so excited to post about anything and everything … 
+writing about what I learned, what I plan to learn, and sharing my experiences on various topics.</p>
+
+<p>But here I am, paralyzed by the need to make everything “perfect.”</p>
+
+<p>This kind of thinking keeps recurring in my life, stopping me from doing the things I truly want to do.
+Mostly, it’s because I fear doing it wrong or not having enough to talk about (even though I’ve already written a list of dozens of topics I could write about).</p>
+
+<p>I feel like I don’t know how to start this..</p>
+
+<p>But guess what? I’ll never know unless I give it a shot.
+A first start, just one tiny step.</p>
+
+<p>So, on the night of March 16th (also the 16th of Ramadan), I decided: <em>“Hey, let’s write the first weekly update.”</em></p>
+
+<p>I’ve always wanted to have a blog to write about tech and my learning journey.</p>
+
+<p>One of the things I’ve wanted to do most is <strong>weekly learning updates</strong> — basically, writing about what I did during the week in a nutshell, 
+focusing on the learning aspects, the obstacles I faced, and how I can improve.</p>
+
+<p>I was inspired by various blogs, like Ali Abdaal’s weekly life notes.</p>
+
+<p>So, let’s get started!</p>
+
+<hr />
+
+<h3 id="reflecting-on-the-first-quarter-goals">Reflecting on the First Quarter Goals</h3>
+
+<p>Last week, I reviewed my progress on my first-quarter goals and realized a few things:</p>
+
+<ul>
+  <li>
+    <p><strong>Lack of Daily Monitoring</strong>: Sometimes, I set weekly goals and try to break them into daily tasks, but this wasn’t efficient.
+I wasn’t tracking my habits, time, or daily accomplishments—especially with the start of Ramadan and the change in schedule.
+Time just flies by.</p>
+
+    <p>So, this week, I started doing daily reviews and writing down the details of my day.</p>
+  </li>
+  <li>
+    <p><strong>Destroying Perfectionism</strong>: I need to adopt a <em>“Bad First Draft”</em> mentality. <em>And here we are, doing just that.</em></p>
+  </li>
+  <li>
+    <p><strong>Slow Progress on ML Course</strong>: It’s been months since I started the ML specialization course, but my progress has been super slow due to inconsistency.<br />
+What I did: I reintroduced the ML course as a daily habit (20 minutes every day).
+And guess what? I finally finished the unit I was stuck on!</p>
+  </li>
+</ul>
+
+<p>My mission for this week was: <strong>“Keep the Momentum Alive.”</strong></p>
+
+<hr />
+
+<h3 id="what-i-did-this-week">What I Did This Week</h3>
+
+<h4 id="1-neural-networks-deep-dive">1. <strong>Neural Networks Deep Dive</strong></h4>
+<p>I tried to tackle neural networks and get a deeper understanding of them.
+Last year, I started learning about ML, DL, and LLMs for my Bachelor’s final project,
+but I realized there were many gaps in my knowledge.
+This became clear during a college module called <em>“Machine Learning and Neural Networks.”</em></p>
+
+<p><img src="../../assets/images/week1.3" alt="Neural Networks" /></p>
+
+<p>I read a few articles on backpropagation and NNs:</p>
+<ul>
+  <li><a href="https://iaee.substack.com/p/neural-networks-intuitively-and-exhaustively">Neural Networks Intuitively and Exhaustively</a></li>
+  <li><a href="https://colah.github.io/posts/2015-08-Backprop/">Backpropagation Explained</a></li>
+</ul>
+
+<p>Along with that, I practiced implementing neural networks.</p>
+
+<h4 id="2-spirituality-and-islam">2. <strong>Spirituality and Islam</strong></h4>
+<p>I took notes on two videos about Ramadan and <em>CHANGE</em> by Ahmed Abd al Monim.
+They were very useful and served as fuel for the start of the week:</p>
+
+<ul>
+  <li><a href="https://youtu.be/pr7EzlgP2BM?si=SmxJPG1Xq9ubHtBL">Video 1</a></li>
+  <li><a href="https://youtu.be/L4Wovp92Zpo?si=BsCXP5IOi1n2Q1QV">Video 2</a></li>
+</ul>
+
+<h4 id="3-game-design-document">3. <strong>Game Design Document</strong></h4>
+<p>I created a Game Design Document for my college module, <em>“CJRV: Game Development and Virtual Reality.”</em></p>
+
+<p>It was challenging to think of how to design a game with limited VR aspects, but it was fun diving into this.
+It’s literally my beginning in game development.<br />
+<em>(PS: Stay tuned for me learning Blender and Unity!)</em></p>
+
+<h4 id="4-college-tps">4. <strong>College TPs</strong></h4>
+<p>Some days this week, I felt super unmotivated to attend college TPs (practical work sessions).
+I skipped some, not gonna lie, while focusing on others. 
+I’m not sure if this was a good idea, but I was certainly overwhelmed. <em>(To give you context, we have 7 TPs — not trying to make excuses, but yeah, I am.)</em></p>
+
+<h4 id="5-energy-and-time-management">5. <strong>Energy and Time Management</strong></h4>
+<p>It was hard to balance my energy this week, especially with sleeping and learning times. 
+Most of the week went into college homework.</p>
+
+<h4 id="6-data-mining-tp">6. <strong>Data Mining TP</strong></h4>
+<p>I worked on a Data Mining TP, which was like a mini-research project. 
+We tried to improve the <strong>Apriori Algorithm</strong>. 
+I mainly used statistical methods and evaluation metrics, which the professor liked. <em>(Phew! He’s a very precise prof.)</em></p>
+
+<h4 id="7-group-reading-sessions">7. <strong>Group Reading Sessions</strong></h4>
+<p>I spent a good amount of time this week on group reading sessions for <em>Muqaddimah Ibn Khaldun</em> (مقدّمة ابن خلدون).
+I was invested on these sessions, though I feel some guilt because they take up more time than I’d like.</p>
+
+<h4 id="8-weekend-slackiness">8. <strong>Weekend Slackiness</strong></h4>
+<p>I realized that the last two weekends, I’ve been super slacky. 
+But I guess it’s good sometimes to focus only on family during weekends.</p>
+
+<h4 id="9-reading-al-naba-al-adheem-النبأ-العظيم">9. <strong>Reading <em>Al-Naba’ Al-Adheem</em> (النبأ العظيم)</strong></h4>
+<p>I started reading a book on the greatness of the Quran called <em>Al-Naba’ Al-Adheem</em>. 
+Since this is the month of Ramadan, it’s a great time to listen to Tafseer and learn more about the Quran.</p>
+
+<hr />
+
+<h3 id="big-takeaway-of-the-week">Big Takeaway of the Week</h3>
+<p><strong>📛 All types of actions carry momentum. It can be good or bad.</strong></p>
+
+<hr />
+
+<p>Though this week was full of things, I do realize I need more delibrate work specially on the technical aspect .</p>
+
+
+
+  <!-- Social sharing section -->
+  <div class="share-section mt-4">
+    <h5 class="share-title">Share this post with your friends!!</h5>
+    <div class="share-buttons">
+      <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fselma-bentaiba.github.io%2Fnotes%2F16.03.2025%2F&text=Starting+the+weekly+review" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      
+      <a href="https://reddit.com/submit?url=https%3A%2F%2Fselma-bentaiba.github.io%2Fnotes%2F16.03.2025%2F&title=Starting+the+weekly+review" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-reddit"></i> Reddit
+      </a>
+      
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fselma-bentaiba.github.io%2Fnotes%2F16.03.2025%2F" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fselma-bentaiba.github.io%2Fnotes%2F16.03.2025%2F" 
+         class="share-btn" 
+         target="_blank"
+         rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
+  </div>
+
+  <!-- Comments section -->
+  
+  <div class="comments-section mt-5">
+    <h5 class="comments-title mb-4">Comments</h5>
+    <script src="https://utteranc.es/client.js"
+            repo="https://github.com/selma-Bentaiba/selma-Bentaiba.github.io.git"
+            issue-term="pathname"
+            label="💬 comments"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+  
+</article>
+
+      </div>
+    </main><footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-row">
+      <!-- Left side description -->
+      <div class="footer-description">
+        <p> . زاويتي الخاصة للذكاء الاصطناعي، الأفكار، وكل شيء يشعل شغفي </p>
+      </div>
+
+      <!-- Right side social links -->
+      <div class="social-links">
+        
+        <a href="https://github.com/selma-Bentaiba" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        
+        
+        
+        
+        <a href="https://linkedin.com/in/selma-bentaiba" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        
+        
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&copy; 2025 Selma's Blog</p>
+    </div>
+  </div>
+</footer><!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- D3.js for visualizations -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Chart.js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Copy Code Script -->
+    <script src="/assets/scripts/copyCode.js"></script>
+    <!-- Back to Top Script -->
+    <script src="/assets/scripts/backToTop.js"></script>
+    <!-- Table of Contents Script -->
+    <script src="/assets/scripts/toc.js"></script>
+    <script src="/assets/scripts/dark-mode.js"></script>
+
+    <!-- Firebase --><script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBJBUmmGWVR0KUYBiSJF-hLmWdJV1n3JX8",
+      authDomain: "blog-5c804.firebaseapp.com",
+      projectId: "blog-5c804",
+      storageBucket: "blog-5c804.firebasestorage.app",
+      messagingSenderId: "800555725459",
+      appId: "1:800555725459:web:b9bfbb95b2cf89f3e0d366",
+      measurementId: "G-3E5CXE5JTX"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Export the initialized app
+    window.firebaseApp = app;
+</script><!-- Add voting.js script -->
+    <script type="module" src="/assets/scripts/voting.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // More specific selector to target all links in content areas
+        const contentLinks = document.querySelectorAll(`
+          .note a,
+          .latest-post-card a,
+          .blog-post a,
+          .thought-post a,
+          article a
+        `);
+        
+        contentLinks.forEach(link => {
+          // Check if the link is pointing to an external site
+          const isExternalLink = link.hostname !== window.location.hostname;
+          
+          // Only add target="_blank" to external links within content
+          if (isExternalLink) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+            link.classList.add('content-link');
+          }
+        });
+      });
+    </script>
+
+  </body>
+
+</html>

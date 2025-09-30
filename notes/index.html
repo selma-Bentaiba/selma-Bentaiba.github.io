@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Add this block before head.html include -->
+
+<script>
+  (function() {
+    // Immediately set the theme before any content loads
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    // Prevent Flash Of Incorrect Theme (FOIT)
+    document.documentElement.style.visibility = 'hidden';
+    
+    window.addEventListener('DOMContentLoaded', function() {
+      document.documentElement.style.visibility = '';
+    });
+  })();
+</script>
+
+<style>
+  /* Critical CSS to prevent layout shift */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    max-width: 710px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    left: 0;
+  }
+  
+</style><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Notes | Selma’s Blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content=". زاويتي الخاصة للذكاء الاصطناعي، الأفكار، وكل شيء يشعل شغفي" />
+<meta property="og:description" content=". زاويتي الخاصة للذكاء الاصطناعي، الأفكار، وكل شيء يشعل شغفي" />
+<link rel="canonical" href="https://selma-bentaiba.github.io/notes/" />
+<meta property="og:url" content="https://selma-bentaiba.github.io/notes/" />
+<meta property="og:site_name" content="Selma’s Blog" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":". زاويتي الخاصة للذكاء الاصطناعي، الأفكار، وكل شيء يشعل شغفي","headline":"Notes","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://selma-bentaiba.github.io/%7B%7B%20site.baseurl%20%7D%7D/assets/images/Palestine_logo.jpg"}},"url":"https://selma-bentaiba.github.io/notes/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://selma-bentaiba.github.io/feed.xml" title="Selma&apos;s Blog" /><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Z57NPQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J76Z57NPQD');
+</script>
+</head>
+<!-- Add favicon right after head.html include -->
+  <link rel="icon" type="image/png" href="/assets/images/Palestine_logo.jpg">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/Palestine_logo.jpg">
+  <link rel="apple-touch-icon" href="/assets/images/Palestine_logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    body {
+      /* font-family: "Karla", serif; */
+      font-family: "Lora", serif;
+      /* font-family: "STIX Two Text", serif; */
+      /* font-family: "Bentham", serif; */
+      /* font-family: 'Nunito', sans-serif; */
+      font-optical-sizing: auto;
+      font-size: large;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <body class="preload"><header class="site-header">
+  <!-- Add Google Analytics only in production --><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Z57NPQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J76Z57NPQD');
+</script>
+<!-- Add X-Frame-Options meta tag -->
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+  <div class="wrapper">
+    <a class="site-title" href="/">Selma's Blog</a>
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon" aria-label="Menu">
+          <svg viewBox="0 0 18 15" width="18px" height="15px" aria-hidden="true">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        <a class="page-link" href="/blog/">Blog</a>
+        <a class="page-link" href="/thoughts/">Thoughts</a>
+        <a class="page-link" href="/notes/">Notes</a>
+
+        <a class="page-link" href="/contact/">Contact Me</a>
+      </div>
+    </nav>
+  </div>
+
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+</header><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Z57NPQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J76Z57NPQD');
+</script>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Notes</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is where I write down my random daily thoughts, my weekly learnings, goals, plans etc.</p>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+    <img src="/assets/images/week1.1.jpeg" alt="Starting the weekly review" class="note-image" />
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Starting the weekly review</summary>
+    <p class="note-date">Last updated: March 16, 2025</p>
+    <h2 id="first-week-review">First week review</h2>
+
+<p>It’s been three weeks since I started this blog.
+I was so excited to post about anything and everything … 
+writing about what I learned, what I plan to learn, and sharing my experiences on various topics.</p>
+
+<p>But here I am, paralyzed by the need to make everything “perfect.”</p>
+
+<p>This kind of thinking keeps recurring in my life, stopping me from doing the things I truly want to do.
+Mostly, it’s because I fear doing it wrong or not having enough to talk about (even though I’ve already written a list of dozens of topics I could write about).</p>
+
+<p>I feel like I don’t know how to start this..</p>
+
+<p>But guess what? I’ll never know unless I give it a shot.
+A first start, just one tiny step.</p>
+
+<p>So, on the night of March 16th (also the 16th of Ramadan), I decided: <em>“Hey, let’s write the first weekly update.”</em></p>
+
+<p>I’ve always wanted to have a blog to write about tech and my learning journey.</p>
+
+<p>One of the things I’ve wanted to do most is <strong>weekly learning updates</strong> — basically, writing about what I did during the week in a nutshell, 
+focusing on the learning aspects, the obstacles I faced, and how I can improve.</p>
+
+<p>I was inspired by various blogs, like Ali Abdaal’s weekly life notes.</p>
+
+<p>So, let’s get started!</p>
+
+<hr />
+
+<h3 id="reflecting-on-the-first-quarter-goals">Reflecting on the First Quarter Goals</h3>
+
+<p>Last week, I reviewed my progress on my first-quarter goals and realized a few things:</p>
+
+<ul>
+  <li>
+    <p><strong>Lack of Daily Monitoring</strong>: Sometimes, I set weekly goals and try to break them into daily tasks, but this wasn’t efficient.
+I wasn’t tracking my habits, time, or daily accomplishments—especially with the start of Ramadan and the change in schedule.
+Time just flies by.</p>
+
+    <p>So, this week, I started doing daily reviews and writing down the details of my day.</p>
+  </li>
+  <li>
+    <p><strong>Destroying Perfectionism</strong>: I need to adopt a <em>“Bad First Draft”</em> mentality. <em>And here we are, doing just that.</em></p>
+  </li>
+  <li>
+    <p><strong>Slow Progress on ML Course</strong>: It’s been months since I started the ML specialization course, but my progress has been super slow due to inconsistency.<br />
+What I did: I reintroduced the ML course as a daily habit (20 minutes every day).
+And guess what? I finally finished the unit I was stuck on!</p>
+  </li>
+</ul>
+
+<p>My mission for this week was: <strong>“Keep the Momentum Alive.”</strong></p>
+
+<hr />
+
+<h3 id="what-i-did-this-week">What I Did This Week</h3>
+
+<h4 id="1-neural-networks-deep-dive">1. <strong>Neural Networks Deep Dive</strong></h4>
+<p>I tried to tackle neural networks and get a deeper understanding of them.
+Last year, I started learning about ML, DL, and LLMs for my Bachelor’s final project,
+but I realized there were many gaps in my knowledge.
+This became clear during a college module called <em>“Machine Learning and Neural Networks.”</em></p>
+
+<p><img src="../../assets/images/week1.3" alt="Neural Networks" /></p>
+
+<p>I read a few articles on backpropagation and NNs:</p>
+<ul>
+  <li><a href="https://iaee.substack.com/p/neural-networks-intuitively-and-exhaustively">Neural Networks Intuitively and Exhaustively</a></li>
+  <li><a href="https://colah.github.io/posts/2015-08-Backprop/">Backpropagation Explained</a></li>
+</ul>
+
+<p>Along with that, I practiced implementing neural networks.</p>
+
+<h4 id="2-spirituality-and-islam">2. <strong>Spirituality and Islam</strong></h4>
+<p>I took notes on two videos about Ramadan and <em>CHANGE</em> by Ahmed Abd al Monim.
+They were very useful and served as fuel for the start of the week:</p>
+
+<ul>
+  <li><a href="https://youtu.be/pr7EzlgP2BM?si=SmxJPG1Xq9ubHtBL">Video 1</a></li>
+  <li><a href="https://youtu.be/L4Wovp92Zpo?si=BsCXP5IOi1n2Q1QV">Video 2</a></li>
+</ul>
+
+<h4 id="3-game-design-document">3. <strong>Game Design Document</strong></h4>
+<p>I created a Game Design Document for my college module, <em>“CJRV: Game Development and Virtual Reality.”</em></p>
+
+<p>It was challenging to think of how to design a game with limited VR aspects, but it was fun diving into this.
+It’s literally my beginning in game development.<br />
+<em>(PS: Stay tuned for me learning Blender and Unity!)</em></p>
+
+<h4 id="4-college-tps">4. <strong>College TPs</strong></h4>
+<p>Some days this week, I felt super unmotivated to attend college TPs (practical work sessions).
+I skipped some, not gonna lie, while focusing on others. 
+I’m not sure if this was a good idea, but I was certainly overwhelmed. <em>(To give you context, we have 7 TPs — not trying to make excuses, but yeah, I am.)</em></p>
+
+<h4 id="5-energy-and-time-management">5. <strong>Energy and Time Management</strong></h4>
+<p>It was hard to balance my energy this week, especially with sleeping and learning times. 
+Most of the week went into college homework.</p>
+
+<h4 id="6-data-mining-tp">6. <strong>Data Mining TP</strong></h4>
+<p>I worked on a Data Mining TP, which was like a mini-research project. 
+We tried to improve the <strong>Apriori Algorithm</strong>. 
+I mainly used statistical methods and evaluation metrics, which the professor liked. <em>(Phew! He’s a very precise prof.)</em></p>
+
+<h4 id="7-group-reading-sessions">7. <strong>Group Reading Sessions</strong></h4>
+<p>I spent a good amount of time this week on group reading sessions for <em>Muqaddimah Ibn Khaldun</em> (مقدّمة ابن خلدون).
+I was invested on these sessions, though I feel some guilt because they take up more time than I’d like.</p>
+
+<h4 id="8-weekend-slackiness">8. <strong>Weekend Slackiness</strong></h4>
+<p>I realized that the last two weekends, I’ve been super slacky. 
+But I guess it’s good sometimes to focus only on family during weekends.</p>
+
+<h4 id="9-reading-al-naba-al-adheem-النبأ-العظيم">9. <strong>Reading <em>Al-Naba’ Al-Adheem</em> (النبأ العظيم)</strong></h4>
+<p>I started reading a book on the greatness of the Quran called <em>Al-Naba’ Al-Adheem</em>. 
+Since this is the month of Ramadan, it’s a great time to listen to Tafseer and learn more about the Quran.</p>
+
+<hr />
+
+<h3 id="big-takeaway-of-the-week">Big Takeaway of the Week</h3>
+<p><strong>📛 All types of actions carry momentum. It can be good or bad.</strong></p>
+
+<hr />
+
+<p>Though this week was full of things, I do realize I need more delibrate work specially on the technical aspect .</p>
+
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+    <img src="/assets/images/start.jpeg" alt="Starting the learning challenge! " class="note-image" />
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Starting the learning challenge! </summary>
+    <p class="note-date">Last updated: September 17, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 1</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This blog marks the start of a personal challenge: a series where I commit to learning every single day and documenting it here. My focus is on computer science, AI, and computer vision. The rule is simple: at least one hour of learning a day, and one honest reflection written down. You can join me in this challenge too — build consistency, learn something daily, and record it.</p>
+
+<p>This summer my focus was on AI agents and deepening more into computer vision.</p>
+
+<p>And today I finished the last part of a course I started earlier, which was about <a href="https://learn.deeplearning.ai/courses/llmops">LLMOps</a> automating and monitoring all steps of ML system construction (LLM development and managing the model in production).
+In the course we studied data preparation, automation, and orchestration with pipelines (which for me was the essential part of the course).
+And lastly, what I studied today: prediction, prompts, and safety. It was about deploying the model via REST API, then unpacking and formatting data, and a quick scope on Safety Attributes.
+The short course was informative, but I could’ve studied it in a shorter time, like in one session.</p>
+
+<p>Then, I studied from the book <a href="https://www.manning.com/books/deep-learning-for-vision-systems"><em>Deep Learning for Computer Vision Systems</em></a>, which I also started this summer, because I felt studying computer vision needs a stronger theoretical side, so this was a good resource for me.
+I started chapter 3 on CNNs, and how image classification using MLPs has its drawbacks by doing an image classification with the MNIST dataset using a very simple neural network.
+The key lesson was how NNs need the input image to be flattened from a 2D matrix into a 1D vector, and by this process we lose spatial features, which makes the training on finding patterns of close areas in the image harder and take longer. Whereas in CNNs there are convolutional layers, where each neuron is connected only to a small local region of the image instead of all pixels as in MLPs.</p>
+
+<p>This book is a great revision for some fundamentals in CV and DL, and it’s really good at capturing and connecting every piece of information together.</p>
+
+<p><strong>Good Tip:</strong> Always check whether the technique you’re learning (like flattening inputs) is a simplification or a limitation, sometimes the most important lesson is <em>why</em> a method fails.</p>
+
+<p>—&gt;</p>
+
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 2 </summary>
+    <p class="note-date">Last updated: September 18, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 2</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To strengthen and deepen my knowledge of agents, I started a new course called <a href="https://learn.deeplearning.ai/courses/llms-as-operating-systems-agent-memory">LLMs as Operating Systems: Agent Memory</a>.</p>
+
+<p>It introduces the idea of self-editable memory in agents, with a focus on the MemGPT design.</p>
+
+<p>The key concept is that the context input window can be thought of as a kind of virtual memory in a computer,
+where the LLM agent also plays the role of an operating system deciding which information should go into the input context window.</p>
+
+<p>As practice, I built a simple agent with editable memory from scratch, using only a Python dictionary as the memory.</p>
+
+<p>I then designed a function to update this memory when needed, and instructed the LLM (OpenAI in this case) on how to use the tool (the “function”).</p>
+
+<p>The most important part was creating an agentic loop, so the agent could perform multi-step reasoning as required.</p>
+
+<p>This felt like working at a low-level foundation something I can build on later to create more complex agents with memory.</p>
+
+<h2 id="book-part">Book part</h2>
+
+<p>After that, I studied from the Deep Learning for Computer Vision book. I reviewed how, in image classification, MLPs (fully connected layers) struggled with feature learning from images.</p>
+
+<p>This is why CNNs replaced them for feature extraction, while fully connected layers remain useful for the classification stage.</p>
+
+<p>The high-level CNN architecture looks like this:</p>
+
+<ul>
+  <li>Input layer</li>
+  <li>Convolutional layers (for feature extraction)</li>
+  <li>Fully connected layer (for classification)</li>
+  <li>Output prediction</li>
+</ul>
+
+<p>The convolutional layers produce feature maps of the image. With each layer, the image dimensions shrink while the depth increases, until we end up with a long array of small features.
+These are then fed into the fully connected layer for classification.</p>
+
+<p>In terms of feature learning:</p>
+
+<ul>
+  <li>Early layers detect low-level features such as lines and edges.</li>
+  <li>Later layers detect patterns within patterns, gradually learning more complex features until the model captures the bigger picture.</li>
+</ul>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 3 </summary>
+    <p class="note-date">Last updated: September 19, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 3</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Today I studied just a little, but I kept the streak alive.</p>
+
+<p>I went through <a href="https://arxiv.org/pdf/2310.08560">MemGPT (arxiv: 2310.08560)</a>, along with the course <em>LLMs as Operating Systems: Agent Memory</em>.</p>
+
+<h3 id="key-ideas">Key Ideas</h3>
+
+<ul>
+  <li>The <strong>context window</strong> holds the most important information.</li>
+  <li><strong>Archival memory</strong> → for general-purpose data.</li>
+  <li><strong>Recall memory</strong> → for old message history.</li>
+  <li>Both archival and recall memory keep <strong>statistics</strong> for tracking and management.</li>
+</ul>
+
+<p>Small step, but progress is progress.</p>
+
+<blockquote>
+  <p>💡 <strong>Note to myself:</strong> studying in the <strong>morning</strong> works best. Don’t push it to late afternoons, finish it as early as possible.</p>
+</blockquote>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 4 </summary>
+    <p class="note-date">Last updated: September 20, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 4</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Today I went deeper into how <strong>memory works inside Letta agents</strong>.</p>
+
+<p>I set up a simple agent with two blocks (one for human input and one for persona ) and played around with inspecting its system prompt, tools, and memory history. 
+It was nice to actually see how the agent keeps track of things behind the scenes.</p>
+
+<p>The main idea was the difference between <strong>core memory</strong> (what the agent actively uses in context) 
+and <strong>archival memory</strong> (stuff saved for later but not in the immediate window). That split makes a lot of sense once you see it in action.</p>
+
+<p>I also tried customizing memory: adding new blocks and tools, and even building a small <strong>task queue memory</strong> where the agent can push and pop tasks.</p>
+
+<p>That part was fun, it felt like giving the agent a basic to-do list that it can manage on its own.</p>
+
+<p>What I liked most is how <em>programmable</em> the memory system is.
+It’s not just the model doing black-box reasoning; you can shape how it remembers and interacts with information. 
+As an engineer, that feels powerful.. it opens up room for building agents that aren’t only “smart,” but also structured and adaptable.</p>
+
+<p><strong>PS:</strong> I haven’t studied the CV book for two days. Tomorrow I need to catch up <em>inchallah</em> and also finish this course!</p>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 5 </summary>
+    <p class="note-date">Last updated: September 21, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 5</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Today I wrapped up the <strong>LLMs as Operating Systems</strong> course. It feels like a milestone because now I see the bigger picture of how LLMs can actually work as the “core” of applications, not just a chatbot.</p>
+
+<h2 id="agentic-rag--external-memory">Agentic RAG &amp; External Memory</h2>
+
+<p>The main takeaway was about <strong>giving agents memory and data sources</strong>:</p>
+
+<ul>
+  <li>One way is just copying data into their <strong>archival memory</strong> (like a built-in database the agent can look up).</li>
+  <li>The other way is connecting the agent to an <strong>external tool</strong> that can query data on demand.</li>
+</ul>
+
+<p>I tested both:</p>
+
+<ul>
+  <li>Created a source (“employee handbook”), uploaded a file, attached it to the agent, and made sure embeddings matched. Once connected, the agent could reference the file like it had read it itself.</li>
+  <li>Then I built a dummy “database” (just a dictionary) and plugged it into the agent via a tool. The agent could call this tool and fetch answers from it.</li>
+</ul>
+
+<p>From an engineer’s perspective, this makes things more <strong>modular</strong>. Instead of cramming everything into the context window, we can design agents that <strong>reach out for information</strong>.</p>
+
+<h2 id="multi-agent-orchestration">Multi-Agent Orchestration</h2>
+
+<p>The second part was about <strong>getting multiple agents to collaborate</strong>. 
+In Letta, agents are meant to run as services, so the question is: how do they talk to each other?</p>
+
+<p>There are two ways:</p>
+
+<ol>
+  <li><strong>Message tools</strong> → one agent can send a message to another.</li>
+  <li><strong>Shared memory blocks</strong> → two agents share the same context window so they both “see” the same data.</li>
+</ol>
+
+<p>I built two agents:</p>
+
+<ul>
+  <li>One for outreach (like sending resumes).</li>
+  <li>Another for evaluation (with a reject/approve tool).</li>
+</ul>
+
+<p>They passed messages back and forth, and with shared memory, both had the same view of what was going on.</p>
+
+<p>Finally, I tried the <strong>multi-agent abstraction</strong>: put both agents into a single group chat. That was simpler, but the idea is the same agents can coordinate either by tools or by a shared space.</p>
+
+<p>For me, this part really shows how we can move beyond a single “all knowing” agent. 
+We can design <strong>specialized agents</strong> that cooperate almost like microservices, but in natural language.</p>
+
+<hr />
+
+<h2 id="reflection">Reflection</h2>
+
+<p>I’ll be honest: I rushed through today to keep up with the consistency streak. I didn’t touch the CV book again,
+and I know I need to fix my timing so I’m not just checking boxes but actually <strong>digesting</strong> the material.</p>
+
+<p>Still, I’m happy I finished the course, it gave me a clear technical intuition about how LLM-based systems are structured:</p>
+
+<ul>
+  <li>Memory is not just a bigger context window, but a system of archives and tools.</li>
+  <li>Agents can be extended and composed, almost like APIs calling each other.</li>
+</ul>
+
+<p>That’s powerful to know as an engineer. Inchallah, tomorrow I’ll slow down a bit, return to the CV book, and balance the depth with consistency.</p>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 6 </summary>
+    <p class="note-date">Last updated: September 22, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 6</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>After finishing the <strong>LLMs as Operating Systems</strong> course yesterday, I didn’t want to lose momentum, but I also didn’t want to just rush into something shiny and new.<br />
+So today was about <strong>reinforcing foundations</strong> while continuing the bigger plan I set for myself around agents.</p>
+
+<h2 id="revisiting-cnns">Revisiting CNNs</h2>
+
+<p>I went back to the <strong>deep learning for computer vision book</strong> and re-read the CNN chapters.
+I already know CNNs, but coming back to them with an engineer’s mindset feels different than just “studying the theory.”</p>
+
+<p>When you look at CNNs in the context of building CV systems, the design choices really stand out:</p>
+
+<ul>
+  <li><strong>Convolutional layers</strong> → not just math, but a way to <em>force the network</em> to learn local patterns.</li>
+  <li><strong>Pooling layers</strong> → a clever compression trick: <em>you don’t need every pixel, just the essence.</em></li>
+  <li><strong>Fully connected layers</strong> → the collapse point, where the network finally says: <em>alright, classify this thing already.</em></li>
+</ul>
+
+<p>The beauty here is <strong>constraints leading to elegance</strong>.<br />
+A kernel is tiny — just a <code class="language-plaintext highlighter-rouge">3×3</code> or <code class="language-plaintext highlighter-rouge">5×5</code> matrix of weights — but sliding it across an image extracts edges, textures, and higher-level features.
+That minimal design is why CNNs became the backbone of modern vision, and why they still matter even when transformers dominate the headlines.</p>
+
+<p>So no, this wasn’t <em>new learning</em>.<br />
+It was sharpening a tool I know I’ll need later in this CV book.</p>
+
+<hr />
+
+<h2 id="huggingface-agents-and-picking-up-the-plan">HuggingFace Agents and Picking Up the Plan</h2>
+
+<p>The second thread today was getting back to the <strong>AI Agents course from HuggingFace</strong>, specifically the <strong>Smolagents framework</strong>.<br />
+This is something I had started in the summer but left unfinished. 
+Picking it up now iq part of the roadmap.</p>
+
+<p>What stood out about <strong>Smolagents</strong>:</p>
+
+<ul>
+  <li><strong>Code-first</strong> → you don’t just prompt and hope; you define actions in code.</li>
+  <li><strong>Lightweight</strong> → minimal abstraction, fast experiments.</li>
+  <li><strong>Flexible</strong> → HuggingFace Hub + multiple LLMs supported out of the box.</li>
+</ul>
+
+<p>It supports:</p>
+
+<ul>
+  <li><strong>CodeAgents</strong> (the core type).</li>
+  <li><strong>ToolCallingAgents</strong> (via JSON).</li>
+  <li><strong>Multi-step workflows</strong> → chain actions together.</li>
+</ul>
+
+<p>Compared to yesterday’s look at Letta and multi-agent orchestration, Smolagents feels like the <strong>sandbox</strong> where I can actually get my hands dirty, test ideas, and learn fast.</p>
+
+<hr />
+
+<h2 id="reflection">Reflection</h2>
+
+<p>Day 6 wasn’t about breakthroughs, it was about <strong>engineering discipline</strong>:</p>
+
+<ul>
+  <li>Revisiting CNNs → reinforced why their design still matters in CV.</li>
+  <li>Smolagents → gave me a lightweight, practical entry point for agents.</li>
+</ul>
+
+<p>If Day 5 was about <em>seeing the architecture</em>,<br />
+Day 6 was about <em>picking the right tools off the shelf and checking they’re sharp.</em></p>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 7</summary>
+    <p class="note-date">Last updated: September 23, 2025</p>
+    <table>
+  <tbody>
+    <tr>
+      <td># Day 7</td>
+      <td>Momentum Learning Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Today I got deeper into <strong>smolagents</strong>, specifically the <code class="language-plaintext highlighter-rouge">CodeAgent</code>.</p>
+
+<p>The core insight: letting the agent write and execute <strong>Python code</strong> instead of just JSON unlocks flexibility and makes tool use feel natural.</p>
+
+<p>In practice, this means you don’t just get a black-box answer. You see:</p>
+<ul>
+  <li>the Python code the model generated,</li>
+  <li>the execution results,</li>
+  <li>and the reasoning steps logged in memory.</li>
+</ul>
+
+<p>For me, that transparency was the big shift. It felt less like guessing and more like debugging with a colleague.</p>
+
+<h2 id="what-i-built-alfred-the-party-planner-">What I Built: Alfred the Party Planner 🦇</h2>
+<p>I followed the tutorial and built a playful <strong>butler agent (Alfred)</strong> that plans a party at Wayne’s mansion.</p>
+
+<ul>
+  <li><strong>Custom tools I wrote:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">suggest_menu()</code>: suggest menus depending on the occasion.</li>
+      <li><code class="language-plaintext highlighter-rouge">catering_service_tool()</code>: simulate picking the best catering service in Gotham.</li>
+      <li><code class="language-plaintext highlighter-rouge">SuperheroPartyThemeTool</code>: generate themed ideas .</li>
+    </ul>
+  </li>
+  <li><strong>Prebuilt tools I plugged in:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">DuckDuckGoSearchTool</code> (search),</li>
+      <li><code class="language-plaintext highlighter-rouge">VisitWebpageTool</code> (navigate),</li>
+      <li><code class="language-plaintext highlighter-rouge">FinalAnswerTool</code> (format output).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>With these wired into a <code class="language-plaintext highlighter-rouge">CodeAgent</code>, I could ask:<br />
+ “Give me the best playlist for a party at Wayne’s mansion. Theme: villain masquerade.”</p>
+
+<p>Alfred went step by step: picked the theme, searched, browsed links, and finally returned a curated playlist.<br />
+Watching each tool call and execution log made the whole process feel robust and traceable.</p>
+
+<h2 id="reflections-as-an-engineer">Reflections as an Engineer</h2>
+<ul>
+  <li><strong>smolagents is pragmatic</strong>: the <code class="language-plaintext highlighter-rouge">MultiStepAgent</code> + execution log design is exactly what makes debugging feasible.</li>
+  <li><strong>Small tools matter</strong>: even trivial ones (<code class="language-plaintext highlighter-rouge">suggest_menu</code>) gave structure and extended capabilities.</li>
+  <li><strong>Observability is real</strong>: I like that smolagents integrates with OpenTelemetry + Langfuse. Being able to replay a run or see why it failed is non-negotiable in production.</li>
+  <li><strong>Feels future-proof</strong>: this setup makes agents composable, testable, and closer to real software systems rather than “magic prompts.”</li>
+</ul>
+
+<h2 id="next-step">Next Step</h2>
+<p>The party planner was fun, but the same pattern applies to serious workflows.<br />
+Next, I want to try building a study assistant that schedules prep tasks with [datetime] and pushes runs to the Hugging Face Hub for reuse.</p>
+
+<p>End of Day 7. I feel like I’m not just learning AI concepts anymore, I’m actually starting to think like an <strong>engineer of agents</strong>.</p>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 8</summary>
+    <p class="note-date">Last updated: September 24, 2025</p>
+    <h1 id="day-8--momentum-learning-series">Day 8 | Momentum Learning Series</h1>
+
+<p>Today I dug into the difference between <strong><code class="language-plaintext highlighter-rouge">CodeAgent</code></strong> and <strong><code class="language-plaintext highlighter-rouge">ToolCallingAgent</code></strong> in <em>smolagents</em>.</p>
+
+<p>The key learning is that <strong><code class="language-plaintext highlighter-rouge">CodeAgent</code> generates Python code</strong> while <strong><code class="language-plaintext highlighter-rouge">ToolCallingAgent</code> outputs JSON blobs</strong> with tool names and arguments.
+That shift in representation really matters:</p>
+<ul>
+  <li>With Python, I get flexibility and the ability to debug by reading the generated code.</li>
+  <li>With JSON, I get structure and predictability, which feels closer to API wiring.</li>
+</ul>
+
+<p>Even the traces highlight this difference, a CodeAgent shows “Executing parsed code …” while a ToolCallingAgent shows “Calling tool … with arguments …”.
+Seeing that contrast made me realize how the <strong>action format shapes both observability and debugging flow</strong>.</p>
+
+<p>To practice, I extended my “party planner” agent Alfred using both methods.
+With the <code class="language-plaintext highlighter-rouge">@tool</code> decorator, I built a quick <code class="language-plaintext highlighter-rouge">catering_service_tool()</code> to simulate picking the best catering in Gotham.</p>
+
+<p>With the subclass method, I wrote <code class="language-plaintext highlighter-rouge">SuperheroPartyThemeTool</code>, where I explicitly defined inputs, outputs, and a forward function.</p>
+
+<p>This hands-on contrast made it clear:</p>
+<ul>
+  <li>The decorator path is perfect for quick prototyping.</li>
+  <li>The subclass path forces more structure, which scales better for complex systems.</li>
+</ul>
+
+<p>Writing these tools also taught me that designing them is basically <strong>API design</strong>!! I had to be deliberate with names, argument types, and descriptions, otherwise the agent reasoning would get messy. 
+That clicked as a very <em>software engineering</em> way of thinking about AI.</p>
+
+<p>By the end of today, I see the tradeoff clearly: <strong>JSON calls give clean structure, Python execution gives expressive power.</strong> 
+Choosing one is less about “which is better” and more about “what the workflow needs.”</p>
+
+<p>That mindset shift felt like moving from “using AI” to actually <strong>engineering orchestration layers between reasoning and execution</strong>.</p>
+
+<p>End of Day 8. My biggest takeaway: <em>how actions are represented  code vs JSON changes everything about how the agent behaves and how I interact with it as an engineer</em>.</p>
+
+  </details>
+</div>
+
+<div class="note-item">
+  <!-- Display the image at the top -->
+  
+
+  <!-- Toggle for title and content -->
+  <details>
+    <summary>Momentum Learning Day 9</summary>
+    <p class="note-date">Last updated: September 29, 2025</p>
+    <h1 id="day-9--momentum-learning-series">Day 9 | Momentum Learning Series</h1>
+
+<p>After four days away, I came back to the course today.
+Pausing was a useful reminder: momentum is fragile, but once the concepts have been internalized, resuming feels less like starting over and more like reconnecting with a system already in place.</p>
+
+<p>The <strong>Agents course</strong> is still long, but I’m steadily moving through it , aiming to complete the <strong>smolagents</strong> section tomorrow inchallah.</p>
+
+<h2 id="retrieval-agents">Retrieval Agents</h2>
+
+<p>Today’s focus was on <strong>Retrieval-Augmented Generation (RAG)</strong> and its <em>agentic</em> extension.</p>
+
+<ul>
+  <li><strong>Traditional RAG</strong>: simply retrieval + generation.</li>
+  <li><strong>Agentic RAG</strong>: retrieval becomes iterative and reflective.
+  Agents can formulate queries, evaluate results, and loop until a satisfying outcome is reached.</li>
+</ul>
+
+<p>This shift made me see retrieval not as a static lookup, but as <strong>a reasoning layer tightly integrated with the agent’s decision cycle</strong>.</p>
+
+<h2 id="what-i-implemented">What I Implemented</h2>
+
+<ol>
+  <li><strong>Web Search Agent with DDGS</strong>
+    <ul>
+      <li>Used <code class="language-plaintext highlighter-rouge">CodeAgent</code> with <code class="language-plaintext highlighter-rouge">DuckDuckGoSearchTool</code>.</li>
+      <li>Flow: analyze request → retrieve → process → store for reuse.</li>
+      <li>This embedded retrieval directly inside the reasoning process, rather than treating it as a side operation.</li>
+    </ul>
+  </li>
+  <li><strong>Custom Knowledge Base with BM25Retriever</strong>
+    <ul>
+      <li>Built a small knowledge set (superhero party themes).</li>
+      <li>Applied a text splitter, then designed <code class="language-plaintext highlighter-rouge">PartyPlanningRetrieverTool</code> with BM25 to return top 5 ranked results.</li>
+      <li>Engineering perspective: <strong>constructing a pipeline</strong> — raw docs → embeddings/index → retriever → agent reasoning.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="embedded-reflections">Embedded Reflections</h2>
+
+<ul>
+  <li>Building tools felt less like “trying out features” and more like <strong>designing interfaces for agents to reason over knowledge</strong>.</li>
+  <li>BM25 gave precise ranking control, showing that retrieval quality is deeply tied to algorithmic choice, not just embeddings.</li>
+  <li>Compared to earlier exercises, today’s work had more of a <strong>system-architecture feel</strong>: retrieval pipelines as part of the reasoning flow, not isolated utilities.</li>
+</ul>
+
+<hr />
+
+<h2 id="quiz-checkpoints">Quiz Checkpoints</h2>
+
+<ul>
+  <li><strong>Tool Creation</strong> → lightweight functions via <code class="language-plaintext highlighter-rouge">@tool</code>; complex ones via <code class="language-plaintext highlighter-rouge">Tool</code> subclasses.</li>
+  <li><strong>CodeAgent &amp; ReAct</strong> → iterative cycle of reasoning, action, feedback, adjustment.</li>
+  <li><strong>Tool Sharing</strong> → Hugging Face Hub makes custom tools reusable across projects.</li>
+  <li><strong>ToolCallingAgent</strong> → emits JSON with tool + arguments.</li>
+  <li><strong>Default Toolbox</strong> → provides baseline tools (search, Python, etc.) for prototyping.</li>
+</ul>
+
+<p><strong>Takeaway:</strong> Retrieval isn’t passive storage or search; it’s an <strong>active reasoning partner</strong> in agent workflows. 
+And even with long gaps, progress compounds: the deeper the system level understanding, the quicker I can pick up where I left off.</p>
+
+<p>At this point, it’s less about learning a course and more about shaping the mindset of an agent systems architect, designing the reasoning flow itself, not just calling tools.</p>
+
+  </details>
+</div>
+
+<style>
+  .note-item {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+  }
+  .note-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .note-date {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    list-style: none;
+  }
+  details summary:hover {
+    color: #0366d6;
+  }
+  details[open] summary {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-row">
+      <!-- Left side description -->
+      <div class="footer-description">
+        <p> . زاويتي الخاصة للذكاء الاصطناعي، الأفكار، وكل شيء يشعل شغفي </p>
+      </div>
+
+      <!-- Right side social links -->
+      <div class="social-links">
+        
+        <a href="https://github.com/selma-Bentaiba" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        
+        
+        
+        
+        <a href="https://linkedin.com/in/selma-bentaiba" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        
+        
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p>&copy; 2025 Selma's Blog</p>
+    </div>
+  </div>
+</footer><!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- D3.js for visualizations -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Chart.js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Copy Code Script -->
+    <script src="/assets/scripts/copyCode.js"></script>
+    <!-- Back to Top Script -->
+    <script src="/assets/scripts/backToTop.js"></script>
+    <!-- Table of Contents Script -->
+    <script src="/assets/scripts/toc.js"></script>
+    <script src="/assets/scripts/dark-mode.js"></script>
+
+    <!-- Firebase --><script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBJBUmmGWVR0KUYBiSJF-hLmWdJV1n3JX8",
+      authDomain: "blog-5c804.firebaseapp.com",
+      projectId: "blog-5c804",
+      storageBucket: "blog-5c804.firebasestorage.app",
+      messagingSenderId: "800555725459",
+      appId: "1:800555725459:web:b9bfbb95b2cf89f3e0d366",
+      measurementId: "G-3E5CXE5JTX"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Export the initialized app
+    window.firebaseApp = app;
+</script><!-- Add voting.js script -->
+    <script type="module" src="/assets/scripts/voting.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // More specific selector to target all links in content areas
+        const contentLinks = document.querySelectorAll(`
+          .note a,
+          .latest-post-card a,
+          .blog-post a,
+          .thought-post a,
+          article a
+        `);
+        
+        contentLinks.forEach(link => {
+          // Check if the link is pointing to an external site
+          const isExternalLink = link.hostname !== window.location.hostname;
+          
+          // Only add target="_blank" to external links within content
+          if (isExternalLink) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+            link.classList.add('content-link');
+          }
+        });
+      });
+    </script>
+
+  </body>
+
+</html>
